@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电缆隧道</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <script type="module">
+        import { renderer } from './RenderLoop.js'
+        //Three.js渲染结果Canvas画布插入到body元素中
+        document.body.appendChild(renderer.domElement);
+        import { choose } from './choose.js'//执行射线拾取代码
+    </script>
+</body>
+
+</html>
